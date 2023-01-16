@@ -1,26 +1,26 @@
 public struct Logger: Loggable {
     
-    static func error(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
+    public static func error(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
         handleLog(level: .error, messages: messages, file: file, function: function, line: line)
     }
     
-    static func info(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
+    public static func info(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
         handleLog(level: .info, messages: messages, file: file, function: function, line: line)
     }
     
-    static func debug(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
+    public static func debug(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
         handleLog(level: .debug, messages: messages, file: file, function: function, line: line)
     }
     
-    static func verbose(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
+    public static func verbose(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
         handleLog(level: .verbose, messages: messages, file: file, function: function, line: line)
     }
     
-    static func warning(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
+    public static func warning(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
         handleLog(level: .warning, messages: messages, file: file, function: function, line: line)
     }
     
-    static func severe(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
+    public static func severe(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
         handleLog(level: .severe, messages: messages, file: file, function: function, line: line)
     }
     
