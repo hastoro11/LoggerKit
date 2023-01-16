@@ -1,3 +1,3 @@
 # LoggerKit
 
-A description of this package.
+A small package to help logging events in my projects.
