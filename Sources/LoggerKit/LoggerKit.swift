@@ -23,9 +23,6 @@ public struct Logger: Loggable {
     public static func severe(messages: Any?..., file: String = #file, function: String = #function, line: Int = #line) {
         handleLog(level: .severe, messages: messages, file: file, function: function, line: line)
     }
-    
-    public init() {
-    }
 }
 
 public extension Logger {
