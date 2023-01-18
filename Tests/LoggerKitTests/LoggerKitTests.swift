@@ -4,37 +4,37 @@ import XCTest
 final class LoggerKitTests: XCTestCase {
     
     func testError() {
-        Logger.error(messages: "Example of error log")
+        Logger.error("Example of error log")
         ///Expected result: [⁉️] [LoggerKitTests.swift]: [testError(): 7] => Example of error log
         
     }
     
     func testInfo() {
-        Logger.info(messages: "Example of info log")
+        Logger.info("Example of info log")
         ///Expected result: [ℹ️] [LoggerKitTests.swift]: [testInfo(): 13] => Example of info log
         
     }
     
     func testDebug() {
-        Logger.debug(messages: "Example of debug log")
+        Logger.debug("Example of debug log")
         ///Expected result: [🐞] [LoggerKitTests.swift]: [testDebug(): 19] => Example of debug log
         
     }
     
     func testVerbose() {
-        Logger.verbose(messages: "Example of verbose log")
+        Logger.verbose("Example of verbose log")
         ///Expected result: [🔬] [LoggerKitTests.swift]: [testVerbose(): 25] => Example of verbose log
         
     }
     
     func testWarning() {
-        Logger.warning(messages: "Example of warning log")
+        Logger.warning("Example of warning log")
         ///Expected result: [⚠️] [LoggerKitTests.swift]: [testWarning(): 31] => Example of warning log
         
     }
     
     func testSevere() {
-        Logger.severe(messages: "Example of severe log")
+        Logger.severe("Example of severe log")
         ///Expected result: [🔥] [LoggerKitTests.swift]: [testSevere(): 37] => Example of severe log
         
     }
@@ -52,9 +52,9 @@ final class LoggerKitTests: XCTestCase {
         
         let testObject = TestObject(name: "Test Object", value: -1)
         
-        Logger.error(messages: error)
-        Logger.info(messages: int)
-        Logger.verbose(messages: double)
-        Logger.warning(messages: testObject)
+        Logger.error(error)
+        Logger.info(int)
+        Logger.verbose(double)
+        Logger.warning(testObject)
     }
 }
